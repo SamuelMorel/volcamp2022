@@ -20,6 +20,6 @@ public class Pageable<T> {
         this.total = query.count();
         size = page.size;
         index = page.index;
-        content = query.page(size, index).list();
+        content = query.page(index, size).list();
     }
 }
